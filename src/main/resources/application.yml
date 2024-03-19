@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: chatting-demo
+  devtools:
+    # Auto Restart
+    restart:
+      enabled: true
+      additional-exclude: static/**,public/**
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chatting?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
